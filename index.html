@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sina-Marie Mayer | Portfolio</title>
+<meta name="description" content="Portfolio of Sina-Marie Mayer, computational social scientist: spatial analysis, NLP, and data science for policy.">
+<style>
+  :root {
+    --bg: #faf8f4;
+    --card: #ffffff;
+    --ink: #1d2433;
+    --muted: #5d6576;
+    --line: #e6e1d8;
+    --accent: #2f6f62;
+    --accent-soft: #e3efeb;
+    --soon: #a26b2a;
+    --soon-soft: #f6ecdf;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--ink);
+    line-height: 1.6;
+  }
+  a { color: var(--accent); }
+  .wrap { max-width: 1040px; margin: 0 auto; padding: 0 24px; }
+
+  /* Header */
+  header { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
+  .eyebrow { font-size: 13px; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); font-weight: 600; }
+  h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: clamp(36px, 6vw, 56px); line-height: 1.1; margin: 12px 0 18px; }
+  .intro { font-size: 18px; color: var(--muted); max-width: 680px; }
+  .links { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 26px; }
+  .btn {
+    display: inline-block; padding: 9px 16px; border-radius: 999px;
+    border: 1px solid var(--ink); color: var(--ink); text-decoration: none; font-size: 14px; font-weight: 500;
+  }
+  .btn.primary { background: var(--ink); color: #fff; }
+  .btn:hover { opacity: .8; }
+
+  /* Skills */
+  .skills { padding: 32px 0; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 20px; }
+  .skills h3 { font-size: 13px; text-transform: uppercase; letter-spacing: .08em; color: var(--muted); margin-bottom: 6px; font-weight: 600; }
+  .skills p { font-size: 15px; }
+
+  /* Projects */
+  section.projects { padding: 48px 0 64px; }
+  h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 30px; margin-bottom: 24px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 22px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 14px; overflow: hidden;
+    display: flex; flex-direction: column; transition: transform .15s, box-shadow .15s;
+  }
+  .card:hover { transform: translateY(-3px); box-shadow: 0 10px 28px rgba(29,36,51,.08); }
+  .thumb { height: 170px; background: #eee center/cover no-repeat; border-bottom: 1px solid var(--line); }
+  .thumb.placeholder {
+    display: flex; align-items: center; justify-content: center;
+    font-family: Georgia, serif; font-size: 40px; color: rgba(255,255,255,.9);
+  }
+  .t1 { background: linear-gradient(135deg, #2f6f62, #7fb3a4); }
+  .t2 { background: linear-gradient(135deg, #3b4d7a, #8fa3cf); }
+  .t3 { background: linear-gradient(135deg, #a26b2a, #e0b47a); }
+  .t4 { background: linear-gradient(135deg, #6b3b5e, #c493b6); }
+  .t5 { background: linear-gradient(135deg, #3e5c2f, #a1c08c); }
+  .body { padding: 18px 20px 20px; display: flex; flex-direction: column; flex: 1; }
+  .meta { display: flex; gap: 8px; align-items: center; margin-bottom: 8px; flex-wrap: wrap; }
+  .badge { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 999px; background: var(--accent-soft); color: var(--accent); }
+  .badge.soon { background: var(--soon-soft); color: var(--soon); }
+  .where { font-size: 12px; color: var(--muted); }
+  .card h3 { font-size: 18px; line-height: 1.3; margin-bottom: 8px; }
+  .card p { font-size: 14.5px; color: var(--muted); flex: 1; }
+  .tags { display: flex; flex-wrap: wrap; gap: 6px; margin: 14px 0; }
+  .tag { font-size: 12px; padding: 2px 8px; border: 1px solid var(--line); border-radius: 6px; color: var(--muted); }
+  .card-links { display: flex; gap: 14px; font-size: 14px; font-weight: 600; }
+  .card-links a { text-decoration: none; }
+  .card-links a:hover { text-decoration: underline; }
+  .card-links .off { color: #b3b0aa; font-weight: 500; }
+
+  footer { border-top: 1px solid var(--line); padding: 28px 0 40px; font-size: 14px; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+  <header>
+    <div class="eyebrow">Portfolio</div>
+    <h1>Sina-Marie Mayer</h1>
+    <p class="intro">
+      Data scientist and computational social scientist. I turn messy data from diverse sources into clear,
+      reproducible analyses, from web scraping and NLP to multi-agent LLM pipelines, spatial analysis and dashboards.
+      Double master's in Social and Economic Data Science (University of Konstanz) and Public Informatics (Rutgers University).
+    </p>
+    <div class="links">
+      <a class="btn primary" href="https://github.com/sinamayer">GitHub</a>
+      <!-- Replace the # with your real links, or delete the lines you don't need -->
+      <a class="btn" href="#">LinkedIn</a>
+      <a class="btn" href="cv.pdf">CV (PDF)</a>
+      <a class="btn" href="mailto:sinamayer30@gmail.com">Email</a>
+    </div>
+  </header>
+
+  <div class="skills">
+    <div><h3>Languages &amp; tools</h3><p>Python, R, SQL, Git, pandas, tidyverse, scikit-learn, Power BI, Tableau</p></div>
+    <div><h3>Methods</h3><p>Regression modeling, ML classification, NLP (topic modeling, sentiment, stance), multi-agent LLM pipelines, GIS</p></div>
+    <div><h3>Topics</h3><p>Climate &amp; environmental policy, housing, AI governance, political behavior</p></div>
+  </div>
+
+  <section class="projects">
+    <h2>Selected projects</h2>
+    <div class="grid">
+
+      <!-- PROJECT: NOLA (live) -->
+      <article class="card">
+        <div class="thumb" style="background-image:url('https://sinamayer.github.io/nola_airbnb/airbnb_affordability_map.png')"></div>
+        <div class="body">
+          <div class="meta"><span class="badge">Live</span><span class="where">Rutgers · Fall 2025</span></div>
+          <h3>Airbnbs &amp; Gentrification in New Orleans</h3>
+          <p>Command-line GIS project mapping Airbnb affordability, rental housing gaps, and flood risk by census tract, with an interactive webmap of listings, FEMA flood zones, and transit access.</p>
+          <div class="tags"><span class="tag">GIS</span><span class="tag">ACS</span><span class="tag">Webmap</span><span class="tag">Housing</span></div>
+          <div class="card-links">
+            <a href="https://sinamayer.github.io/nola_airbnb/">View project →</a>
+            <a href="https://github.com/sinamayer/nola_airbnb">Repo</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT: R Shiny -->
+      <article class="card">
+        <div class="thumb placeholder t1">R</div>
+        <div class="body">
+          <div class="meta"><span class="badge soon">Coming soon</span><span class="where">Rutgers · Global Data Analytics</span></div>
+          <h3>Health Indicators &amp; Development</h3>
+          <p>Regression analysis of health and development indicators across 153 countries using World Bank data, presented in an interactive R Shiny app for non-technical audiences.</p>
+          <div class="tags"><span class="tag">R Shiny</span><span class="tag">Regression</span><span class="tag">World Bank</span></div>
+          <div class="card-links">
+            <span class="off">App (link coming)</span>
+            <span class="off">Repo (coming)</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- PROJECT: Reddit NLP -->
+      <article class="card">
+        <div class="thumb placeholder t2">NLP</div>
+        <div class="body">
+          <div class="meta"><span class="badge soon">Coming soon</span><span class="where">Rutgers · Directed Study</span></div>
+          <h3>AI Technostress on Reddit</h3>
+          <p>Independently built five-agent LLM pipeline that detects AI-related technostress in Reddit communities, operationalizing the Ragu-Nathan five-factor model.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">LLM agents</span><span class="tag">Text-as-data</span></div>
+          <div class="card-links"><span class="off">Repo (coming)</span></div>
+        </div>
+      </article>
+
+      <!-- PROJECT: California commute -->
+      <article class="card">
+        <div class="thumb placeholder t3">GAM</div>
+        <div class="body">
+          <div class="meta"><span class="badge soon">Coming soon</span></div>
+          <h3>Green Commuting in California Metros</h3>
+          <p>Spatial beta regression (implemented as a GAM) of green commute mode share across three California metro areas using ACS PUMS microdata.</p>
+          <div class="tags"><span class="tag">R</span><span class="tag">Spatial stats</span><span class="tag">ACS PUMS</span></div>
+          <div class="card-links"><span class="off">Repo (coming)</span></div>
+        </div>
+      </article>
+
+      <!-- PROJECT: RAISE -->
+      <article class="card">
+        <div class="thumb placeholder t4">NLP</div>
+        <div class="body">
+          <div class="meta"><span class="badge soon">Coming soon</span><span class="where">RAISE 2026 finalist</span></div>
+          <h3>AI Phobia in the Media</h3>
+          <p>Insights from 10,000+ newspaper articles using classical NLP, topic modeling and sentiment analysis. Selected as 1 of 7 teams from 188 submissions in the RAISE 2026 NLP competition.</p>
+          <div class="tags"><span class="tag">Topic modeling</span><span class="tag">Sentiment</span><span class="tag">Team project</span></div>
+          <div class="card-links"><span class="off">Repo (coming)</span></div>
+        </div>
+      </article>
+
+      <!-- PROJECT: Recruiting pipeline -->
+      <article class="card">
+        <div class="thumb placeholder t2">AI</div>
+        <div class="body">
+          <div class="meta"><span class="badge soon">Coming soon</span><span class="where">NJBDA Symposium 2026</span></div>
+          <h3>Multi-Agent AI Recruiting Pipeline</h3>
+          <p>Seven specialized LLM agents for writing job postings and screening applications, with human-in-the-loop checkpoints and responsible-AI design. Tested across 3 commercial LLMs in 1,440 runs.</p>
+          <div class="tags"><span class="tag">LLM agents</span><span class="tag">Responsible AI</span><span class="tag">Team project</span></div>
+          <div class="card-links"><span class="off">Repo (coming)</span></div>
+        </div>
+      </article>
+
+      <!-- PROJECT: Thesis -->
+      <article class="card">
+        <div class="thumb placeholder t5">MA</div>
+        <div class="body">
+          <div class="meta"><span class="badge soon">In progress</span><span class="where">Konstanz · 2027</span></div>
+          <h3>Temperature Anomalies and Voting in Germany</h3>
+          <p>Master's thesis: regression analysis of how local temperature anomalies relate to Green and far-right vote shares across federal, state and municipal elections.</p>
+          <div class="tags"><span class="tag">Climate</span><span class="tag">Elections</span><span class="tag">Regression</span></div>
+          <div class="card-links"><span class="off">Coming 2027</span></div>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <footer>
+    © 2026 Sina-Marie Mayer · Vienna · Built with GitHub Pages
+  </footer>
+</div>
+
+</body>
+</html>
