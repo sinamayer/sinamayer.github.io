@@ -126,6 +126,8 @@
   .progress p { grid-column: 1; font-size: 14.5px; color: var(--muted); max-width: 720px; }
   .progress .right { grid-column: 2; grid-row: 1; display: flex; gap: 8px; align-items: center; justify-content: flex-end; }
   .badge.soon { background: var(--soon-soft); color: var(--soon); }
+  .progress p.role { margin-top: 6px; color: var(--ink); font-size: 14px; }
+  .progress p.role strong { font-weight: 600; }
   @media (max-width: 600px) {
     .progress li { grid-template-columns: 1fr; }
     .progress .right { grid-column: 1; grid-row: auto; justify-content: flex-start; }
@@ -241,21 +243,23 @@
   </section>
 
   <section>
-    <h2>In progress</h2>
+    <h2>Research &amp; team projects</h2>
     <ul class="progress">
       <li>
         <h3>AI Phobia in the Media</h3>
-        <div class="right"><span class="where">RAISE 2026 finalist</span><span class="badge soon">Coming soon</span></div>
+        <div class="right"><span class="where">RAISE 2026</span><span class="badge">Finalist · 1 of 7 teams</span></div>
         <p>Insights from 10,000+ newspaper articles using classical NLP, topic modeling and sentiment analysis. Selected as 1 of 7 teams from 188 submissions in the RAISE 2026 NLP competition.</p>
+        <p class="role"><strong>My role:</strong> coded the sentiment analysis and presented our results at the finals.</p>
       </li>
       <li>
         <h3>Multi-Agent AI Recruiting Pipeline</h3>
-        <div class="right"><span class="where">NJBDA Symposium 2026</span><span class="badge soon">Coming soon</span></div>
+        <div class="right"><span class="where">NJBDA Symposium 2026</span><span class="badge">Team project</span></div>
         <p>Seven specialized LLM agents for writing job postings and screening applications, with human-in-the-loop checkpoints and responsible-AI design. Tested across 3 commercial LLMs in 1,440 runs.</p>
+        <p class="role"><strong>My role:</strong> co-authored the white paper and worked on Part A, the agents that create job listings.</p>
       </li>
       <li>
         <h3>Temperature Anomalies and Voting in Germany</h3>
-        <div class="right"><span class="where">Konstanz · 2027</span><span class="badge soon">Master's thesis</span></div>
+        <div class="right"><span class="where">Konstanz · 2027</span><span class="badge soon">Thesis in progress</span></div>
         <p>Regression analysis of how local temperature anomalies relate to Green and far-right vote shares across federal, state and municipal elections.</p>
       </li>
     </ul>
